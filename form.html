@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form</title>
+    <style media="screen">
+      input{
+        width: 200px;
+        height: 25px;
+      }
+      button{
+        background-color: #78FC34;
+        height: 30px;
+      }
+      button:hover{
+        background-color: #69C739;
+        transition-duration: 0.5s;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Para un saludo, ingresa tu nombre:</p>
+    <form action="{{ url_for('hello') }}" method="post">
+      <input type="text" name="name" placeholder="Enter your name">
+      <button class="button">Submit</button>
+    </form>
+  </body>
+</html>
